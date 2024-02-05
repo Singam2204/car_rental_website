@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book A Car</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <style>
+        .nav-link {
+            font-size: 20px;
+            margin-left: 10px;
+            margin-right: 10px;  
+
+        }
+        .nav-link:hover {
+            border-bottom: 2px solid black;
+        }
+        .card{
+            background-color: rgb(219, 219, 219);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #searchInput{
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Car-Rental</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#section1">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#section2">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+                <input type="search" placeholder="Search" id="searchInput">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+
+        </div>
+    </nav>
+    <!-- nav bar ends -->
+     
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <div class="card" class="carItem" data-company="Ertiga" style="width: 100%;">
+                    <img src="Images/ertiga.jpeg" class="carImage" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Maruthi Suzuki Ertiga</h5>
+                        <ul class="card-text">
+                            <li>Rs. 170/- hr</li>
+                            <li>Petrol</li>
+                            <li>7 Seats</li>
+                            <li>Location: Hyderabad</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="Book()">Rent now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" class="carItem" data-company="Swift" style="width: 100%;">
+                    <img src="Images/swift.jpeg" class="jobImage"  class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Maruthi Suzuki Swift</h5>
+                        <ul class="card-text">
+                            <li>Rs. 97/- hr</li>
+                            <li>Petrol</li>
+                            <li>5 Seats</li>
+                            <li>Location: Hyderabad</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="Book()">Rent now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                    <div class="card" class="carItem" data-company="Nissan" style="width: 100%;">
+                        <img src="Images/nissan.jpeg"class="jobImage"  class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nissan Magnite</h5>
+                        <ul class="card-text">
+                            <li>Rs. 105/- hr</li>
+                            <li>Petrol</li>
+                            <li>5 Seats</li>
+                            <li>Location: Hyderabad</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="Book()">Rent now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <div class="card" class="carItem" data-company="Hyundai" style="width: 100%;">
+                    <img src="Images/hyundai.jpeg" class="jobImage" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hyundai I20</h5>
+                        <ul class="card-text">
+                            <li>Rs. 230/- hr</li>
+                            <li>Petrol</li>
+                            <li>5 Seats</li>
+                            <li>Location: Hyderabad</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="Book()">Rent now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" class="carItem" data-company="Aura" style="width: 100%;">
+                    <img src="Images/aura.jpeg" class="jobImage" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hyundai Aura</h5>
+                        <ul class="card-text">
+                            <li>Rs. 250/- hr</li>
+                            <li>Petrol</li>
+                            <li>5 Seats</li>
+                            <li>Location: Hyderabad</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="Book()">Rent now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" class="carItem" data-company="Tata Tiago" style="width: 100%;">
+                    <img src="Images/tiago.jpeg" class="jobImage" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tata Tiago</h5>
+                        <ul class="card-text">
+                            <li>Rs. 120/- hr</li>
+                            <li>Petrol</li>
+                            <li>5 Seats</li>
+                            <li>Location: Hyderabad</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="Book()">Rent now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3 mb-3">
+            <div class="col-md-4">
+                <div class="card" class="carItem" data-company="Kia Sonet" style="width: 100%;">
+                    <img src="Images/kia.jpeg" class="jobImage" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kia Sonet</h5>
+                        <ul class="card-text">
+                            <li>Rs. 219/- hr</li>
+                            <li>Petrol</li>
+                            <li>5 Seats</li>
+                            <li>Location: Hyderabad</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="Book()">Rent now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" class="carItem"data-company="Baleno" style="width: 100%;">
+                    <img src="Images/baleno.jpg"  class="jobImage" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Maruthi Suzuki Baleno</h5>
+                        <ul class="card-text">
+                            <li>Rs. 200/- hr</li>
+                            <li>Petrol</li>
+                            <li>5 Seats</li>
+                            <li>Location: Hyderabad</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="Book()">Rent now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" class="carItem" data-company="Volkswagen Vento" style="width: 100%;">
+                    <img src="Images/Vento.jpeg" class="jobImage" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Volkswagen Vento</h5>
+                        <ul class="card-text">
+                            <li>Rs. 180/- hr</li>
+                            <li>Petrol</li>
+                            <li>5 Seats</li>
+                            <li>Location: Hyderabad</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" onclick="Book()">Rent now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function () {
+            var searchTerm = this.value.toLowerCase();
+            var carItems = document.querySelectorAll('.carItem');
+
+            carItems.forEach(function (carItem) {
+                var company = carItem.dataset.company.toLowerCase();
+
+                if (company.includes(searchTerm)) {
+                    carItem.style.display = '';
+                } else {
+                    carItem.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

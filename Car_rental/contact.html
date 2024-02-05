@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(224, 224, 224);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .one {
+            width: auto;
+            background-color: moccasin;
+            font-size: 20px;
+            margin-left: 80%;
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Contact Us</h1>
+        <div class="contact-form">
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit"><a href="index.html">Submit</a></button>
+            </form>
+        </div>
+    </section>
+    <section class="two">
+        <div class="contact-form one">
+            <p><b>Reach us at:</b> <br> <br>
+                <i class="fa-solid fa-phone"></i> +91 1234567890 <br> <br>
+                <i class="fa-solid fa-envelope"></i> carsrental@gmail.com <br> <br>
+                <i class="fa-brands fa-whatsapp"></i> &nbsp;
+                <i class="fa-brands fa-instagram"></i> &nbsp;
+                <i class="fa-brands fa-twitter"></i> &nbsp;
+                <i class="fa-brands fa-facebook"></i> &nbsp;
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
